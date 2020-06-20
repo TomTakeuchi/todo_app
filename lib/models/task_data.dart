@@ -21,7 +21,6 @@ class TaskData extends ChangeNotifier {
     final newTask = Task(name: newTaskTitle, deadLine: date, isDone: false);
     int todoId = await todosService.saveTodo(newTask);
     //先に　databaseに追加 > idを取得 > そのidで管理できる
-    print(todoId);
     Task todo = Task(name: newTaskTitle, deadLine: date, id: todoId);
     tasks.add(todo);
     notifyListeners();
@@ -29,14 +28,13 @@ class TaskData extends ChangeNotifier {
 
   void updateTask(Task task) async {
     task.toggleDone();
-    await todosService.updateTodo(task); //0 <=> 1
+    await todosService.updateTodo(task); //0 <=> 1   sfalse<=>true
     notifyListeners();
   }
 
   void deleteTask(int index, Task task) async {
     tasks.removeAt(index);
     await todosService.deleteTodo(task.id);
-    print(task.id);
     notifyListeners();
   }
 }

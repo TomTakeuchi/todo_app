@@ -29,6 +29,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
     if (picked != null) {
       setState(() {
         selectDateController.text = (DateFormat.yMMMd()).format(picked);
+        //datetime > String に変換
         dTime = selectDateController.text;
 
         //ここで選択された値を変数なり、コントローラーに代入する
@@ -139,6 +140,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 if (taskTitle != null && dTime != null) {
                   Provider.of<TaskData>(context, listen: false)
                       .addTask(taskTitle, dTime);
+                  //入力した内容をリストに追加
                   Navigator.pop(context);
                 }
               },

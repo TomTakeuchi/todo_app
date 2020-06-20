@@ -25,16 +25,14 @@ class _TaskScreenState extends State<TaskScreen> {
     var tasks = await _todosService.getTodo();
     tasks.forEach((task) async {
       setState(() {
-        print(task['name']);
-        print('id=${task['id']}');
-        print(task['deadLine']);
-        print(task['isDone']);
         Task todo = Task(
             name: task['name'],
             deadLine: task['deadLine'],
             id: task['id'],
             isDone: task['isDone'] == 0 ? false : true);
         Provider.of<TaskData>(context, listen: false).tasks.add(todo);
+        //databaseから取得したデータをproviderのリストに追加
+        //boolはsqlにないからint型で管理
       });
     });
     print(Provider.of<TaskData>(context, listen: false).tasks.length);

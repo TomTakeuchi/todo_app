@@ -2,6 +2,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
+//database作成
 class DataBaseConnection {
   setDataBase() async {
     var directory = await getApplicationDocumentsDirectory();
