@@ -28,7 +28,7 @@ class TaskData extends ChangeNotifier {
 
   void updateTask(Task task) async {
     task.toggleDone();
-    await todosService.updateTodo(task); //0 <=> 1   sfalse<=>true
+    await todosService.updateTodo(task); //0 <=> 1   false<=>true
     notifyListeners();
   }
 
