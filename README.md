@@ -1,15 +1,12 @@
-# fluttertodo
+# Do
 
-A new Flutter application.
+シンプルなタスク管理アプリ
 
-## Getting Started
+ ios　         https://apps.apple.com/us/app/do/id1518360903?l=ja&ls=1
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ android     https://play.google.com/store/apps/details?id=co.tom.Do
+ 
+ 
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
