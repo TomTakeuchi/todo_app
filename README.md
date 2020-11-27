@@ -2,8 +2,16 @@
 
 シンプルなタスク管理アプリ
 
-![image](https://user-images.githubusercontent.com/62689795/99345880-b3d31680-28d6-11eb-8282-b4133f1d9aa9.png)
-![image](https://user-images.githubusercontent.com/62689795/99345825-89815900-28d6-11eb-8706-9a67d250c2d7.png)
+<div>
+ 
+<img width="250" alt="1242x2208 " src="https://user-images.githubusercontent.com/62689795/100415438-7c771d80-30bf-11eb-977c-c70fa38a0a2d.png">
+
+ 
+ 
+ 
+<img width="250" alt="1242x2208(2) " src="https://user-images.githubusercontent.com/62689795/100415456-86991c00-30bf-11eb-9821-e45216d1183e.png">
+</div>
+
 
  ios　         https://apps.apple.com/us/app/do/id1518360903?l=ja&ls=1
 
